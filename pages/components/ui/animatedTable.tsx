@@ -1,9 +1,5 @@
-import { useState, useEffect } from "react";
 
 export default function AnimatedTable({ data }: { data: any[] }) {
-  const [visibleRows, setVisibleRows] = useState<any[]>([]);
-
-
 
   return (
       <div className="flex flex-col">
@@ -27,7 +23,7 @@ export default function AnimatedTable({ data }: { data: any[] }) {
                     <tr
                       key={idx}
                     >
-                      {Object.entries(row || {}).map(([key, value]: any, i) => (
+                      {Object.entries(row || {}).map(([ value]: any, i) => (
                         <td
                           key={i}
                           className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-neutral-200"

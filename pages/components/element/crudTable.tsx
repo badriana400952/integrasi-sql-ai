@@ -1,7 +1,6 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import AnimatedTable from '../ui/animatedTable'
 import { useNotif } from './laerts'
-import NavbarDemo from './navbar'
 
 const Tabless = () => {
     const [text, setText] = React.useState<string>("")

@@ -1,4 +1,5 @@
 import { createContext } from "react";
 
 // Membuat Context kosong
-export  const LinkContext = createContext(null);
+const LinkContext = createContext(null);
+export default LinkContext

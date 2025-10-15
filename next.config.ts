@@ -11,6 +11,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "scuto.co.id",
       },
+       {
+        protocol: "https",
+        hostname: "assets.aceternity.com",
+      },
     ],
   },
 };

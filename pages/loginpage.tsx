@@ -4,9 +4,9 @@ import React from "react";
 import { cn } from "../lib/utils";
 import { Input } from "./components/ui/input";
 import { Label } from "./components/ui/label";
-import { Spotlight } from "./components/ui/Spotlight";
 import { Inter } from "next/font/google";
 import { useRouter } from "next/router";
+import { Spotlight } from "./components/ui/Spotlight";
 const inter = Inter({ subsets: ["latin"] });
 export default function LoginPage() {
 

@@ -43,7 +43,7 @@ export default function Home() {
   const isEmpty = !data?.length && !loading
   return (
     <>
-        <div className="relative flex flex-col h-[100vh] w-full overflow-hidden rounded-md  antialiased md:items-center md:justify-center">
+      <div className="relative flex flex-col h-[100vh] w-full overflow-hidden rounded-md  antialiased md:items-center md:justify-center">
         <div
           className={cn(
             "absolute inset-0",
@@ -56,7 +56,7 @@ export default function Home() {
         <NavbarDemo />
         <>
           {/* TABEL */}
-            <div className=" container max-w-7xl  flex-1 flex flex-col justify-center">
+          <div className=" container max-w-7xl  flex-1 flex flex-col justify-center">
             {loading ? (
               <div className="relative overflow-x-auto">
                 <table className="min-w-full divide-y divide-gray-200 dark:divide-neutral-700">
@@ -102,7 +102,7 @@ export default function Home() {
                                 <tr
                                   key={idx}
                                 >
-                                  {Object.entries(row || {}).map(([key, value]: any, i) => (
+                                  {Object.entries(row || {}).map(([ value]: any, i) => (
                                     <td
                                       key={i}
                                       className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-neutral-200"
