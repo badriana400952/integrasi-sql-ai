@@ -2,8 +2,8 @@ import { AnimatePresence, motion } from "motion/react";
 
 import { useRouter } from "next/router";
 import { useState } from "react";
-import { cn } from "../../../lib/utils";
-import { useLink } from "../../LinkContext";
+import { cn } from "../../lib/utils";
+import { useLink } from "../context/LinkContext";
 export const HoverEffect = ({
     items,
     className,

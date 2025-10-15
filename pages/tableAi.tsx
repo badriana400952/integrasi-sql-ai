@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { cn } from "../lib/utils";
-import { useNotif } from "./components/element/laerts";
-import NavbarDemo from "./components/element/navbar";
-import { useLink } from "./LinkContext";
+import { useNotif } from "../components/element/laerts";
+import NavbarDemo from "../components/element/navbar";
+import { useLink } from "../components/context/LinkContext";
 
 export default function Home() {
 

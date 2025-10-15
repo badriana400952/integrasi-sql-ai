@@ -20,6 +20,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx, node_modules/@react-pdf-viewer/default-layout/lib/styles/index.css", "pages/components/element/laerts.tsx" ],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx, node_modules/@react-pdf-viewer/default-layout/lib/styles/index.css", "components/element/laerts.tsx" ],
   "exclude": ["node_modules"]
 }

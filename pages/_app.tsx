@@ -1,8 +1,8 @@
 import type { AppProps } from "next/app";
 import { Inter } from "next/font/google";
 import "../styles/globals.css";
-import { NotifProvider } from "./components/element/laerts";
-import { LinkProvider } from "./LinkContext";
+import { LinkProvider } from "../components/context/LinkContext";
+import { NotifProvider } from "../components/element/laerts";
 const inter = Inter({
   subsets: ["latin"],
   weight: ["400", "600"],

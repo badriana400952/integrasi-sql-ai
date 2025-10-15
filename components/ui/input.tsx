@@ -2,7 +2,7 @@
 "use client";
 import * as React from "react";
 import { useMotionTemplate, useMotionValue, motion } from "motion/react";
-import { cn } from "../../../lib/utils";
+import { cn } from "../../lib/utils";
 import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 

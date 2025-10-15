@@ -1,13 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import AnimatedTable from '../ui/animatedTable'
 import { useNotif } from './laerts'
+import { useLink } from '../context/LinkContext'
 
 const Tabless = () => {
     const [text, setText] = React.useState<string>("")
     const [data, setData] = React.useState<any[]>([])
     const [loading, setLoading] = React.useState<boolean>(false)
     const { notif } = useNotif();
-
+    const { linkValue } = useLink();
     const handlegetAiTable = async () => {
         setLoading(true)
         if (!text) {
@@ -30,13 +31,17 @@ const Tabless = () => {
             setLoading(false)
         }
     }
-
+    useEffect(() => {
+        if (linkValue.prompt) {
+            setText(linkValue.prompt)
+        }
+    }, [linkValue.prompt]);
     const isEmpty = !data?.length && !loading
     return (
 
         <>
             {/* TABEL */}
-            <div className="w-full flex-1 flex flex-col justify-center">
+        <div className=" container max-w-7xl  flex-1 flex flex-col justify-center">
                 {loading ? (
                     <div className="relative overflow-x-auto">
                         <table className="min-w-full divide-y divide-gray-200 dark:divide-neutral-700">
@@ -82,6 +87,7 @@ const Tabless = () => {
                             id="chatInput"
                             placeholder="Create, Read, Update, Delete"
                             rows={1}
+                            value={text}
                             onChange={(e) => setText(e.target.value)}
                             className={`w-full resize-none bg-transparent outline-none text-gray-800 placeholder-gray-400 ${text.length > 300 ? "min-h-[205px]" : text.length > 75 ? "min-h-[100px]" : ""} max-h-[300px] text-base p-2`}
                         ></textarea>

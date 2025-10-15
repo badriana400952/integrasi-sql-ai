@@ -1,7 +1,7 @@
 import React from "react";
 import { cn } from "../lib/utils";
-import { HoverEffect } from "./components/ui/card-hover-effect";
-import NavbarDemo from "./components/element/navbar";
+import { HoverEffect } from "../components/ui/card-hover-effect";
+import NavbarDemo from "../components/element/navbar";
 
 
 export default function PromptPage() {

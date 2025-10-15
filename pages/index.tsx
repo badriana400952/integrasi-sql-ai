@@ -1,6 +1,7 @@
+import Tabless from "../components/element/crudTable";
+import NavbarDemo from "../components/element/navbar";
 import { cn } from "../lib/utils";
-import NavbarDemo from "./components/element/navbar";
-import Tabless from "./components/element/crudColom";
+
 
 export default function Home() {
   
