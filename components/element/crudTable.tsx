@@ -8,6 +8,7 @@ const Tabless = () => {
     const [data, setData] = React.useState<any[]>([])
     const [loading, setLoading] = React.useState<boolean>(false)
     const { notif } = useNotif();
+    console.log(data)
     const { linkValue } = useLink();
     const handlegetAiTable = async () => {
         setLoading(true)
